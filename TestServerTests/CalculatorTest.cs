@@ -11,7 +11,10 @@ public class CalculatorTest
         var numbers = new List<Number>
         {
             new() { Id = 0, Value = 0 },
+            
             new() { Id = 0, Value = 1 },
+
+
             new() { Id = 0, Value = 2 }
         };
 
