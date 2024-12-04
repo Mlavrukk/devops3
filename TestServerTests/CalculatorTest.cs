@@ -11,11 +11,14 @@ public class CalculatorTest
         var numbers = new List<Number>
         {
             new() { Id = 0, Value = 0 },
+            
             new() { Id = 0, Value = 1 },
+
+
             new() { Id = 0, Value = 2 }
         };
 
-        var expectedSum = 0;
+        var expectedSum = 3;
 
         var sum = Calculator.Sum(numbers);
 
@@ -32,7 +35,7 @@ public class CalculatorTest
             new() { Id = 0, Value = -3 }
         };
 
-        var expectedSum = 0;
+        var expectedSum = -6;
 
         var sum = Calculator.Sum(numbers);
 
@@ -47,7 +50,7 @@ public class CalculatorTest
         for (var i = 0; i < 100; i++)
             numbers.Add(new Number { Id = 0, Value = i });
 
-        var expectedSum = 0;
+        var expectedSum = 4950;
 
         var sum = Calculator.Sum(numbers);
 
